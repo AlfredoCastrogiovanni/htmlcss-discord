@@ -36,24 +36,30 @@ body {
 
 /* Header */
 header {
-    background-color: rgb(173, 216, 230);
+    background-color: rgb(49, 97, 224);
     display: flex;
     padding: 20px 0;
     
 }
 
 header .wrapper {
-    background-color: rgb(218, 165, 32);
     display: flex;
     width: 50%;
+    height: 50px;
+    line-height: 30px;
 }
 
 header .wrapper .logo {
     width: 20%;
 }
 
+header .wrapper .logo img {
+    height: 30px;
+}
+
 header .wrapper nav {
     width: 60%;
+    color: white;
 }
 
 header .wrapper nav ul {
@@ -63,12 +69,21 @@ header .wrapper nav ul {
 }
 
 header .wrapper nav ul li {
-    margin-left: 5px;
+    margin-left: 25px;
 }
 
 header .wrapper .login {
     width: 20%;
     text-align: end;
+}
+
+header .wrapper .login .login-button {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 65px;
+    height: 35px;
+    border: none;
 }
 
 header .wrapper .logo,
@@ -79,10 +94,12 @@ header .wrapper .login {
 
 /* Hero Section */
 .hero {
-    background-color: rgb(0, 0, 139);
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
     display: flex;
     justify-content: center;
     padding: 50px 0;
+    height: 700px;
 }
 
 .hero .hero-item {
