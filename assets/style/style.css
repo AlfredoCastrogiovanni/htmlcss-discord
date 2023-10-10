@@ -126,49 +126,57 @@ header .wrapper .login {
 }
 
 /* General Column */
-.column2-right,
-.voice-channels-section {
+.tematic-channels-section,
+.voice-channels-section,
+.community-section {
     display: flex;
     justify-content: center;
     padding: 60px 0;
 }
 
-.column2-right .column2-right-wrapper,
-.voice-channels-section .voice-channels-wrapper {
+.tematic-channels-section .tematic-channels-wrapper,
+.voice-channels-section .voice-channels-wrapper,
+.community-section .community-wrapper {
     height: 400px;
     width: 50%;
     display: flex;
 }
 
-.column2-right .column2-right-wrapper .main-content,
-.voice-channels-section .voice-channels-wrapper .main-content {
+.tematic-channels-section .tematic-channels-wrapper .img-wrapper,
+.voice-channels-section .voice-channels-wrapper .img-wrapper,
+.community-section .community-wrapper .img-wrapper {
     width: 70%;
     padding: 0px 50px;
 }
 
-.column2-right .column2-right-wrapper aside,
-.voice-channels-section .voice-channels-wrapper aside {
+.tematic-channels-section .tematic-channels-wrapper aside,
+.voice-channels-section .voice-channels-wrapper aside,
+.community-section .community-wrapper aside {
     width: 30%;
 }
 
-.column2-right .column2-right-wrapper .main-content {
+.tematic-channels-section .tematic-channels-wrapper .img-wrapper,
+.community-section .community-wrapper .img-wrapper {
     text-align: end;
 }
 
-.column2-right .column2-right-wrapper .main-content img,
-.voice-channels-section .voice-channels-wrapper .main-content img {
+.tematic-channels-section .tematic-channels-wrapper .img-wrapper img,
+.voice-channels-section .voice-channels-wrapper .img-wrapper img,
+.community-section .community-wrapper .img-wrapper img {
     height: 100%;
 }
 
-.column2-right .column2-right-wrapper aside h2,
-.voice-channels-section .voice-channels-wrapper aside h2 {
+.tematic-channels-section .tematic-channels-wrapper aside h2,
+.voice-channels-section .voice-channels-wrapper aside h2,
+.community-section .community-wrapper aside h2 {
     font-size: 45px;
     margin-bottom: 20px;
     font-weight: bolder;
 }
 
-.column2-right .column2-right-wrapper aside p,
-.voice-channels-section .voice-channels-wrapper aside p {
+.tematic-channels-section .tematic-channels-wrapper aside p,
+.voice-channels-section .voice-channels-wrapper aside p,
+.community-section .community-wrapper aside p {
     font-size: 17px;
     font-weight: 600;
 }
@@ -210,19 +218,18 @@ footer {
     background-color: rgb(35, 39, 42);
 }
 
+/* Upper Footer */
 footer .upper-footer {
-    border-bottom: 2px solid rgb(211, 211, 211);
-    /* height: 600px; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 footer .upper-footer .footer-wrapper {
     display: flex;
-    height: 500px;
     width: 50%;
+    border-bottom: 1px solid rgb(114, 137, 218);
+    padding-bottom: 20px;
 }
 
 footer .upper-footer .footer-wrapper aside {
@@ -250,40 +257,54 @@ footer .upper-footer .footer-wrapper aside .footer-icons {
     color: white;
 }
 
-
 footer .upper-footer .footer-wrapper .column4-wrapper {
-    background-color: rgb(32, 178, 170);
     display: flex;
     width: 70%;
-    border-color: white;
 }
 
 footer .upper-footer .footer-wrapper .column4-wrapper .column {
     width: calc(100% / 4);
-    border: 2px dashed white;
 }
 
+footer .upper-footer .footer-wrapper .column4-wrapper .column h3 {
+    margin-bottom: 10px;
+}
 
+footer .upper-footer .footer-wrapper .column4-wrapper .column ul {
+    list-style-type: none;
+}
+
+footer .upper-footer .footer-wrapper .column4-wrapper .column ul li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Bottom Footer */
 footer .bottom-footer {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 footer .bottom-footer .footer-wrapper {
-    background-color: rgb(127, 255, 212);
     display: flex;
     justify-content: space-between;
     width: 50%;
-    padding: 20px 0;
 }
 
-footer .bottom-footer .footer-wrapper .logo,
-footer .bottom-footer .footer-wrapper .button {
-    background-color: rgb(255, 182, 193);
-    height: 25px;
-    width: 55px;
-    border: 1px dashed black;
-    padding: 3px;
+footer .bottom-footer .footer-wrapper img {
+    height: 30px;
 }
+
+footer .bottom-footer .footer-wrapper .signup-button {
+    background-color: rgb(142, 161, 225);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 10px;
+}
+
+
+
 
