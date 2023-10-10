@@ -36,7 +36,7 @@ body {
 
 /* Header */
 header {
-    background-color: rgb(49, 97, 224);
+    background-color: rgb(37, 94, 233);
     display: flex;
     padding: 20px 0;
     
@@ -98,16 +98,45 @@ header .wrapper .login {
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding: 50px 0;
-    height: 700px;
+    padding: 85px 0 150px;
 }
 
 .hero .hero-item {
-    background-color: rgb(238, 130, 238);
-    height: 400px;
-    width: 40%;
-    border-radius: 5px;
+    width: 30%;
+    text-align: center;
 }
+
+.hero .hero-item h1 {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero .hero-item p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero .hero-item .download-button {
+    background-color: white;
+    margin-right: 20px;
+}
+
+.hero .hero-item .discord-button {
+    background-color: rgb(35, 39, 42);
+    color: white;
+}
+
+.hero .hero-item .download-button,
+.hero .hero-item .discord-button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+
 
 /* General Column */
 .column2-right,
