@@ -14,24 +14,12 @@ body {
     margin: 0 auto;
 }
 
-.border-dashed {
-    border: 2px dashed black;
-}
-
-.background-blue {
-    background-color: rgb(30, 144, 255);
-}
-
-.background-pink {
-    background-color: rgb(255, 192, 203);
-}
-
-.background-white {
-    background-color: ffffff;
-}
-
 .background-grey {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(246, 246, 246);
+}
+
+.purple-text {
+    color: rgb(114, 137, 218);
 }
 
 /* Header */
@@ -39,7 +27,6 @@ header {
     background-color: rgb(37, 94, 233);
     display: flex;
     padding: 20px 0;
-    
 }
 
 header .wrapper {
@@ -98,7 +85,8 @@ header .wrapper .login {
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding: 85px 0 150px;
+    align-items: center;
+    height: 650px;
 }
 
 .hero .hero-item {
@@ -129,52 +117,92 @@ header .wrapper .login {
 }
 
 .hero .hero-item .download-button,
-.hero .hero-item .discord-button {
+.hero .hero-item .discord-button,
+.videocall-section .videocall-wrapper .download-button {
     border: none;
     padding: 15px 20px;
     border-radius: 25px;
     font-size: 17px;
 }
 
-
-
 /* General Column */
 .column2-right,
-.column2-left {
+.voice-channels-section {
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .column2-right .column2-right-wrapper,
-.column2-left .column2-left-wrapper {
+.voice-channels-section .voice-channels-wrapper {
     height: 400px;
     width: 50%;
     display: flex;
 }
 
 .column2-right .column2-right-wrapper .main-content,
-.column2-left .column2-left-wrapper .main-content {
-    width: 60%;
+.voice-channels-section .voice-channels-wrapper .main-content {
+    width: 70%;
+    padding: 0px 50px;
 }
 
 .column2-right .column2-right-wrapper aside,
-.column2-left .column2-left-wrapper aside {
-    width: 40%;
+.voice-channels-section .voice-channels-wrapper aside {
+    width: 30%;
 }
 
-/* Bottom Section */
-.bottom-section {
-    background-color: rgb(211, 211, 211);
+.column2-right .column2-right-wrapper .main-content {
+    text-align: end;
+}
+
+.column2-right .column2-right-wrapper .main-content img,
+.voice-channels-section .voice-channels-wrapper .main-content img {
+    height: 100%;
+}
+
+.column2-right .column2-right-wrapper aside h2,
+.voice-channels-section .voice-channels-wrapper aside h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.column2-right .column2-right-wrapper aside p,
+.voice-channels-section .voice-channels-wrapper aside p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* Video Call Section */
+.videocall-section {
     display: flex;
     justify-content: center;
     padding: 50px 0;
 }
 
-.bottom-section .huge-green {
-    background-color: rgb(34, 139, 34);
-    height: 800px;
+.videocall-section .videocall-wrapper {
     width: 50%;
+    text-align: center;
+}
+
+.videocall-section .videocall-wrapper h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.videocall-section .videocall-wrapper .start-adventure {
+    background-image: url("../img/stars.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 26px;
+    margin-bottom: 30px;
+}
+
+.videocall-section .videocall-wrapper .download-button {
+    color: white;
+    background-color: rgb(142, 161, 225);
 }
 
 /* Footer */
@@ -199,8 +227,29 @@ footer .upper-footer .footer-wrapper {
 
 footer .upper-footer .footer-wrapper aside {
     width: 30%;
-    background-color: rgb(240, 128, 128);
 }
+
+footer .upper-footer .footer-wrapper aside h2 {
+    font-size: 35px;
+}
+
+footer .upper-footer .footer-wrapper aside .languages {
+    margin: 15px 0;
+}
+
+footer .upper-footer .footer-wrapper aside .languages img {
+    height: 13px;
+}
+
+footer .upper-footer .footer-wrapper aside .footer-icons > * {
+    margin-right: 15px;
+}
+
+footer .upper-footer .footer-wrapper aside .languages,
+footer .upper-footer .footer-wrapper aside .footer-icons {
+    color: white;
+}
+
 
 footer .upper-footer .footer-wrapper .column4-wrapper {
     background-color: rgb(32, 178, 170);
